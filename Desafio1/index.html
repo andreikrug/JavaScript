@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         // dever retornar o 2
+        const singers = [1,1,2,2,2,5,5];
+        
+        let singer = 0;
+        let singerComp = 0;
+        let maxCount = 0;
+        singers.forEach(main);
+        function main(element) 
+        {   
+                if(singer == 0)
+                {
+                    singer = element;
+                    maxCount += 1;
+                } else 
+                {
+                    if(singer === element)
+                    {
+                        maxCount += 1;
+                    }
+                    if (singer != element)
+                    {
+                        maxCount -= 1;
+                        singerComp += 1;
+                    }
+                    if(maxCount == 0)
+                    {
+                        maxCount = singerComp;
+                        singer = element;
+                        singerComp = 0;
+                    }
+                }
+        }
+        console.log("o cantor mais repetido foi:" + singer)
+        console.log(maxCount)
+        console.log(singerComp)
+        // este input vai ser uma lista com o numero referente ao artista, o que aparecer mais vezes vai ser o que vai retornar
+        // Como fazer?
+        // Ordenar primeiro? Ele já vem ordenado. 
+        // Usar alguma função que já abstraia isso no javascript? que já traga o valor mais repetido
+
+      
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
