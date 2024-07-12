@@ -1,0 +1,1 @@
+algoritmo que lê o nome do aluno, a nota de suas três provas e calcule a sua média nas provas.
